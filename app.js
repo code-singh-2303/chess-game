@@ -68,6 +68,7 @@ io.on("connection",function(uniquesocket){
     })
 })
 
-server.listen(3000,function(){
+const PORT = process.env.PORT || 3000;
+server.listen(PORT, function(){
     console.log("SERVER CHAL RHA LADLE");
 });
